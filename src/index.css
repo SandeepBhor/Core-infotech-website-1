@@ -1,13 +1,99 @@
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
-  @apply bg-gray-100;
+.App {
+  text-align: center;
 }
 
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFF7F1; /* Adjust the alpha value for transparency */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.center-container {
+  text-align: center;
+}
+
+.about-us-heading {
+  color: #3498db;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+
+
+.solutions-container {
+  background-color: #FFF7F1; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.title {
+  color: #3498db;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.solution {
+  margin-bottom: 15px;
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+
+
+/* ContactUsPage.css */
+
+.contact-card {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+
+.technology-card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-heading {
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+/* Tailwind CSS styles */
+.bg-blue-500 {
+  background-color: #3498db;
+}
+
+.text-white {
+  color: white;
+}
+
+.technology-used-conatiner{
+  background-color: #f7f7f7;
 }

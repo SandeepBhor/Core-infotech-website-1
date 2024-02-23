@@ -1,30 +1,51 @@
-// HomePage.js
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
-import { AppBar, Tabs, Tab } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
-    <div>
-      <AppBar position="static">
-        <Tabs>
-          <Tab label={<Link to="/">About Us</Link>} />
-          <Tab label={<Link to="/solutions-for">Solutions For</Link>} />
-          <Tab label={<Link to="/our-clients">Our Clients</Link>} />
-          <Tab label={<Link to="/technology-used">Technology Used</Link>} />
-          <Tab label={<Link to="/ContactUspage">Contact Us</Link>} />
-        </Tabs>
-      </AppBar>
-
-      <Outlet /> {/* This is where the content for child routes will be rendered */}
-
-      {/* Add other content for the home page */}
-      <h1>About Us</h1>
-      <p>
-        Custom Application Development With constant changes in technologies and business requirements...
-      </p>
+    <div className="App">
+      <header className="App-header">
+        <Navbar />
+      </header>
+      <main>
+        {/* Content below the navbar */}
+        <div>
+          <h1>Welcome to Our Website</h1>
+          <p>This is the content below the navbar.</p>
+        </div>
+      </main>
     </div>
   );
-}
+};
+
+const Navbar = () => {
+  return (
+    <nav
+      className="navbar"
+      style={{ backgroundColor: '#87CEEB', padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+    >
+      <div className="logo">
+        <img src="company-logo.png" alt="Company Logo" style={{ maxWidth: '100px' }} />
+      </div>
+      <div className="menu" style={{ display: 'flex' }}>
+        <Link to="/AboutUsPage" style={{ color: 'white', marginRight: '20px', textDecoration: 'none' }} >
+          About Us
+        </Link>
+        <Link to="/SolutionsForPage" style={{ color: 'white', marginRight: '20px', textDecoration: 'none' }} >
+          Solutions For
+        </Link>
+        <Link to="/ClientsPage" style={{ color: 'white', marginRight: '20px', textDecoration: 'none' }} >
+          Our Clients
+        </Link>
+        <Link to="/TechnologyPage" style={{ color: 'white', marginRight: '20px', textDecoration: 'none' }} >
+          Technology Used
+        </Link>
+        <Link to="/ContactUsPage" style={{ color: 'white', marginRight: '20px', textDecoration: 'none' }} >
+          Contact Us
+        </Link>
+      </div>
+    </nav>
+  );
+};
 
 export default HomePage;
