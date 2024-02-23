@@ -9,7 +9,8 @@ body{
 }
 
 .about-us-container {
-  max-width: 800px;
+  max-width: 90%;
+  max-height: 80%;
   margin: 0 auto;
   padding: 20px;
   background-color: #FFF7F1; 
@@ -17,6 +18,8 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .center-container {
@@ -39,8 +42,15 @@ body{
 
 
 .solutions-container {
+  max-width: 100%;
+  max-height: 80%;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #FFF7F1; 
-  padding: 20px; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
   border-radius: 10px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
@@ -57,7 +67,6 @@ body{
 }
 
 
-/* ContactUsPage.css */
 
 .contact-card {
   background-color: #f7f7f7;
@@ -94,7 +103,7 @@ body{
 }
 
 .technology-used-conatiner{
-  background-color: #f7f7f7;
+  background-color: #FFF7F1;
 }
 
 .customTypography {
@@ -103,4 +112,17 @@ body{
 
 }
 
+
+.clients-conatiner{
+  color: #3498db;
+}
+
+
+.technology-conatiner{
+  color: #3498db;
+}
+
+.contact-conatiner{
+  color: #3498db;
+}
 

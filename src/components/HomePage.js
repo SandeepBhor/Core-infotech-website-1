@@ -29,7 +29,7 @@ const businessPartnersData = [
 ];
 
 const HomePage = () => {
-  const [selectedPage, setSelectedPage] = useState(null);
+  const [selectedPage, setSelectedPage] = useState('AboutUsPage');
 
   const handleLinkClick = (page) => {
     setSelectedPage(page);
@@ -87,7 +87,7 @@ const NavLink = ({ onClick, children }) => {
 
 const AboutUsPage = () => {
   return (
-    <div style={{ backgroundColor: '#FFE4C9',margin: 0 }}>
+    <div >
     <div className="about-us-container">
       <div className="center-container">
         <h1 className="about-us-heading">About Us</h1>
@@ -201,7 +201,7 @@ const ClientsPage = () =>
 {
   const renderClient = (client, index) => (
     <Grid item xs={12} sm={6} md={6} lg={6} key={index} style={{ height: '100%' }}>
-      <Card style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+      <Card className='card-color' style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         <CardContent style={{ height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
           <Typography variant="h6" component="div" mb={1}>
             {client.link ? (
@@ -218,31 +218,38 @@ const ClientsPage = () =>
   );
 
   return (
+    
     <Container>
-      <Typography variant="h4" component="h1" mt={4} mb={2} style={{ textAlign: 'center' }}>
+      <Typography variant="h4" component="h1" mt={4} mb={2} style={{ textAlign: 'center'}} className='clients-conatiner'>
         Some of Our Esteemed Clients
       </Typography>
-
+      <br></br>
+      <div style={{ backgroundColor: '#FFF7F1',margin: 0 }}>
       <Grid container spacing={3}>
         {clientsData.map(renderClient)}
       </Grid>
 
-      <Typography variant="h4" component="h1" mt={4} mb={2} style={{ textAlign: 'center' }}>
+      <Typography variant="h4" component="h1" mt={4} mb={2} style={{ textAlign: 'center' }} className='clients-conatiner'>
         Business Partners
       </Typography>
 
       <Grid container spacing={3}>
         {businessPartnersData.map(renderClient)}
       </Grid>
+      </div>
     </Container>
+    
   );
 };
 
 const TechnologyPage = () => 
 {
   return (
+    
     <Container className='technology-used-conatiner'>
-      <Typography variant="h4" component="h1" mt={4} mb={2}>
+      <div style={{ backgroundColor: '#FFF7F1',margin: 0 }}>
+       
+      <Typography variant="h4" component="h1" mt={4} mb={2} className='technology-conatiner'>
         Technology Used
       </Typography>
 
@@ -264,11 +271,12 @@ const TechnologyPage = () =>
         ))}
       </Grid>
           <br></br>
-          <Typography variant="body1" className="customTypography">
+          <Typography variant="body1" className="technology-conatiner">
           We have mastered the logics in data movement between the branches without any additional cost in hardware setup.
           </Typography>
-
+          </div>
     </Container>
+   
   );
 };
 
@@ -276,7 +284,7 @@ const ContactUsPage = () =>
 {
   return (
     <Container className='contact-us-container'>
-      <Typography variant="h4" component="h1" mt={4} mb={2}>
+      <Typography variant="h4" component="h1" mt={4} mb={2} className='contact-conatiner'>
         Contact Us
       </Typography>
 
