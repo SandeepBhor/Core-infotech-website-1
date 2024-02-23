@@ -1,18 +1,18 @@
-
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.App {
-  text-align: center;
-}
 
+
+body{
+  background-color: #FEECE2;
+}
 
 .about-us-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #FFF7F1; /* Adjust the alpha value for transparency */
+  background-color: #FFF7F1; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -53,7 +53,7 @@
 
 .solution {
   margin-bottom: 15px;
-  line-height: 1.5; /* Adjust line height for better readability */
+  line-height: 1.5; 
 }
 
 
@@ -85,7 +85,6 @@
   margin-bottom: 10px;
 }
 
-/* Tailwind CSS styles */
 .bg-blue-500 {
   background-color: #3498db;
 }
@@ -97,3 +96,11 @@
 .technology-used-conatiner{
   background-color: #f7f7f7;
 }
+
+.customTypography {
+  font-size: 25px;
+  color: #130101; 
+
+}
+
+
