@@ -69,7 +69,7 @@ const Navbar = ({ onLinkClick }) => {
       <div className="menu" style={{ display: 'flex' }}>
         <NavLink onClick={() => onLinkClick('AboutUsPage')}>About Us</NavLink>
         <NavLink onClick={() => onLinkClick('SolutionsForPage')}>Solutions For</NavLink>
-        <NavLink onClick={() => onLinkClick('ClientsPage')}>Our Clients</NavLink>
+        
         <NavLink onClick={() => onLinkClick('TechnologyPage')}>Technology Used</NavLink>
         <NavLink onClick={() => onLinkClick('ContactUsPage')}>Contact Us</NavLink>
       </div>
@@ -166,31 +166,7 @@ const SolutionsForPage = () => {
           </Typography>
         </li>
 
-        <li>
-          <Typography variant="body1" paragraph className="solution">
-            <strong>ANPR: Automatic number plate recognition (ANPR):</strong>(ANPR) is a surveillance system that allows users to track, identify and monitor moving vehicles. License plates of vehicles passing by are scanned and saved by mounted cameras. Our ANPR system is simple to install and operate.
-          </Typography>
-        </li>
-
-        <li>
-          <Typography variant="body1" paragraph className="solution">
-            <strong>RLVD: Red Light Violation Detection (RLVD)</strong>(RLVD) helps identify vehicles that violate traffic regulations by running a red light. Our RLVD solution is easy and quick to install as it does not require any integration with the traffic light system nor uses any sensors.
-          </Typography>
-        </li>
-
-        <li>
-          <Typography variant="body1" paragraph className="solution">
-            <strong>Speed Detection:</strong> To reduce incidences of rash driving and improve road safety we have designed a Speed Detection solution that can accurately identify vehicles going over the prescribed speed limit for that road / highway.
-          </Typography>
-        </li>
-
-
-
-        <li>
-          <Typography variant="body1" paragraph className="solution">
-            <strong>ICCC:</strong> Is alert system detecting incidents and alerts to the system head office using cctvs. This system is connected with ANPR for stolen vehicles.
-          </Typography>
-        </li>
+        
       </ul>
 
     </div>
@@ -227,13 +203,7 @@ const ClientsPage = () => {
           {clientsData.map(renderClient)}
         </Grid>
 
-        <Typography variant="h4" component="h1" mt={4} mb={2} style={{ textAlign: 'center' }} className='clients-conatiner'>
-          Business Partners
-        </Typography>
-
-        <Grid container spacing={3}>
-          {businessPartnersData.map(renderClient)}
-        </Grid>
+        
       </div>
     </div>
 
@@ -286,7 +256,7 @@ const ContactUsPage = () => {
             <h1 className='customTypography'>Core Infotech</h1>
             <br />
             <Typography variant="body1" mb={2}>
-              H-406, Suprema, Casabella, Palava, near Xperia Mall, Kalyan-shill Rd., Dombivali(E)-421204, Maharashtra INDIA.
+              iThink, B519, Palava, near Xperia Mall, Kalyan-shill Rd., Dombivali(E)-421204, Maharashtra INDIA.
             </Typography>
             <div className="center-container">
               <LocalPhoneIcon className="icon" />
